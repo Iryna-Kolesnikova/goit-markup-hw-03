@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,39 +19,41 @@
   </head>
   <body class="body">
     <header class="header">
-      <nav class="header-nav">
-        <!-- LOGO -->
-        <a class="logo-page link" href="./index.html"
-          >Web<span class="logo-page-studio">Studio</span></a
-        >
-        <!-- MENU -->
-        <ul class="header-list list">
-          <li class="menu-item">
-            <a class="menu-link link" href="./index.html">Studio</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="./portfolio.html">Portfolio</a>
-          </li>
-          <li class="menu-item">
-            <a class="menu-link link" href="">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- ADDRES -->
-      <address class="contacts">
-        <ul class="contacts-list list">
-          <li class="contact-item">
-            <a class="contact-link link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li class="contact-item">
-            <a class="contact-link link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+      <div class="container page-two">
+        <nav class="header-nav">
+          <!-- LOGO -->
+          <a class="logo-page link" href="./index.html"
+            >Web<span class="logo-page-studio">Studio</span></a
+          >
+          <!-- MENU -->
+          <ul class="header-list list">
+            <li class="menu-item">
+              <a class="menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="./portfolio.html">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link link" href="">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- ADDRES -->
+        <address class="contacts">
+          <ul class="contacts-list list">
+            <li class="contact-item">
+              <a class="contact-link mail link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a class="contact-link phone link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
     <main>
       <section>
@@ -70,126 +76,127 @@
             <button class="btn-portfolio" type="button">Marketing</button>
           </li>
         </ul>
-
-        <ul class="list-page list">
-          <li class="work-items link">
-            <a class="link" href="">
-              <img
-                class="work-img"
-                src="./images/images-portfolio/bank-app.jpg"
-                alt="bank-app"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Banking App Interface Concept</h2>
-              <p class="page-desc">App</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href=""
-              ><img
-                class="work-img"
-                src="./images/images-portfolio/cashles-payment.jpg"
-                alt="cashles-payment"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Cashless Payment</h2>
-              <p class="page-desc">Marketing</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href="">
-              <img
-                class="work-img"
-                src="./images/images-portfolio/meditaion-app.jpg"
-                alt="meditaion-app"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Meditation App</h2>
-              <p class="page-desc">App</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href=""
-              ><img
-                class="work-img"
-                src="./images/images-portfolio/taxi-service.jpg"
-                alt="taxi-service"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Taxi Service</h2>
-              <p class="page-desc">Marketing</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href=""
-              ><img
-                class="work-img"
-                src="./images/images-portfolio/screen-illustration.jpg"
-                alt="screen-illustration"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Screen Illustrations</h2>
-              <p class="page-desc">Design</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href=""
-              ><img
-                class="work-img"
-                src="./images/images-portfolio/online-courses.jpg"
-                alt="girl"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Online Courses</h2>
-              <p class="page-desc">Marketing</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href=""
-              ><img
-                class="work-img"
-                src="./images/images-portfolio/instagram-stories.jpg"
-                alt="instagram-stories"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Instagram Stories Concept</h2>
-              <p class="page-desc">Design</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href=""
-              ><img
-                class="work-img"
-                src="./images/images-portfolio/organic-food.jpg"
-                alt="organic-food"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Organic Food</h2>
-              <p class="page-desc">Web Site</p></a
-            >
-          </li>
-          <li class="work-items link">
-            <a class="link" href=""
-              ><img
-                class="work-img"
-                src="./images/images-portfolio/fresh-coffee.jpg"
-                alt="fresh-coffee"
-                width="360"
-                height="300"
-              />
-              <h2 class="page-title">Fresh Coffee</h2>
-              <p class="page-desc">Web Site</p></a
-            >
-          </li>
-        </ul>
+        <div class="examples-list">
+          <ul class="list-page list">
+            <li class="work-items link">
+              <a class="link" href="">
+                <img
+                  class="work-img"
+                  src="./images/images-portfolio/bank-app.jpg"
+                  alt="bank-app"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Banking App Interface Concept</h2>
+                <p class="page-desc">App</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href=""
+                ><img
+                  class="work-img"
+                  src="./images/images-portfolio/cashles-payment.jpg"
+                  alt="cashles-payment"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Cashless Payment</h2>
+                <p class="page-desc">Marketing</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href="">
+                <img
+                  class="work-img"
+                  src="./images/images-portfolio/meditaion-app.jpg"
+                  alt="meditaion-app"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Meditation App</h2>
+                <p class="page-desc">App</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href=""
+                ><img
+                  class="work-img"
+                  src="./images/images-portfolio/taxi-service.jpg"
+                  alt="taxi-service"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Taxi Service</h2>
+                <p class="page-desc">Marketing</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href=""
+                ><img
+                  class="work-img"
+                  src="./images/images-portfolio/screen-illustration.jpg"
+                  alt="screen-illustration"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Screen Illustrations</h2>
+                <p class="page-desc">Design</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href=""
+                ><img
+                  class="work-img"
+                  src="./images/images-portfolio/online-courses.jpg"
+                  alt="girl"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Online Courses</h2>
+                <p class="page-desc">Marketing</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href=""
+                ><img
+                  class="work-img"
+                  src="./images/images-portfolio/instagram-stories.jpg"
+                  alt="instagram-stories"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Instagram Stories Concept</h2>
+                <p class="page-desc">Design</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href=""
+                ><img
+                  class="work-img"
+                  src="./images/images-portfolio/organic-food.jpg"
+                  alt="organic-food"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Organic Food</h2>
+                <p class="page-desc">Web Site</p></a
+              >
+            </li>
+            <li class="work-items link">
+              <a class="link" href=""
+                ><img
+                  class="work-img"
+                  src="./images/images-portfolio/fresh-coffee.jpg"
+                  alt="fresh-coffee"
+                  width="360"
+                  height="300"
+                />
+                <h2 class="page-title">Fresh Coffee</h2>
+                <p class="page-desc">Web Site</p></a
+              >
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
     <footer class="footer">
