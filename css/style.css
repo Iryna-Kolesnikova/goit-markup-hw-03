@@ -21,6 +21,7 @@
   --hero-color: #ffffff;
   --last-color: #e7e9fc;
   --logo-footer-color: #f4f4fd;
+  --card-color: #ffffff;
 }
 
 /*  =================== HEAD  =================== */
@@ -139,7 +140,6 @@
 
   margin-top: 0;
   margin-bottom: 48px;
-  /* width: 500.13px; */
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -173,13 +173,14 @@
 /* ==================ADVANTAGES================ */
 
 .advantages {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
+  flex-wrap: wrap;
 }
 
 .page-title {
@@ -198,18 +199,16 @@
   color: var(--body-color);
   margin: 0;
 }
-.list-page
-/* ========================== WHAT ARE WE DOING================= */
-.work-example {
-  outline: 2px solid tomato;
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 120px;
-  padding-top: 120px;
+/* .advantages-items {
+  background-color: tomato;
+} */
+.list-page .advantages-items + .advantages-items {
+  margin-left: 24px;
 }
+.portf-link {
+  margin-bottom: 32px;
+}
+/* ========================== WHAT ARE WE DOING=================*/
 .caption-section {
   font-weight: 700;
   font-size: 36px;
@@ -223,23 +222,32 @@
 }
 
 /* ============================OUR TEAM========================= */
-.work-items-team {
-  outline: 2px solid tomato;
+.chous {
+  margin-right: 24px;
+  width: 264px;
+  background-color: var(--card-color);
+  text-align: center;
+}
+.chous:nth-child(4n) {
+  margin-right: 0;
+}
+.work-items-sections {
+  /* outline: 2px solid tomato; */
   width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 120px;
   padding-top: 120px;
+  flex-wrap: wrap;
 }
 .work-items-bc {
   background: var(--logo-footer-color);
 }
-.work-img {
+
+.team {
   margin-bottom: 32px;
 }
-.team {
+.card-work {
   margin-bottom: 32px;
 }
 /* ======================PAGE PORTFOLIO=========================== */
@@ -251,7 +259,7 @@
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
   width: 1158px;
   justify-content: center;
   margin-bottom: 72px;
@@ -291,19 +299,16 @@
 }
 .list-positiv {
   width: 264px;
-  margin-right: 24px;
 }
-.list-page .list-positiv.list-positiv:nth-last-child(-n + 4) {
-  margin-right: 0;
-}
+
 .work-items {
   width: 360px;
   margin-right: 24px;
-  margin-bottom: 30px;
+  margin-bottom: 48px;
   border: 1px solid #e7e9fc;
 }
 .examples-list {
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 
   width: 1158px;
   margin-left: auto;
@@ -316,10 +321,16 @@
 .work-items:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
+.title-subject {
+  margin-bottom: 8px;
+}
+.text-chose {
+  margin-bottom: 32px;
+}
 /* ============================FOOTER============================== */
 .footer-style {
   background: var(--brand-lite-color);
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 
   width: 264px;
   margin-top: 100px;
