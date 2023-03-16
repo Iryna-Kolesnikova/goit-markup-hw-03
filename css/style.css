@@ -11,6 +11,22 @@
   font-style: normal;
   color: var(--body-color);
 }
+img {
+  display: block;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul {
+  padding-left: 0;
+  margin: 0;
+}
 /*============= variables================== */
 :root {
   --brand-color: #4d5ae5;
@@ -28,30 +44,31 @@
 .header-list {
   display: flex;
 
-  margin-right: 332px;
-  width: 261px;
+  /* margin-right: 332px;
+  width: 261px; */
 }
 
 .header {
   background-color: var(--hero-color);
-  outline: 1px solid #e7e9fc;
+  border-bottom: 1px solid var(--last-color);
 }
 .container {
-  margin-left: auto;
-  margin-right: auto;
-
+  outline: solid 5px palevioletred;
+  margin: 0 auto;
   width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
+}
+.header-content {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   padding-top: 24px;
   padding-bottom: 24px;
   justify-content: flex-start;
 }
 .header-nav {
   display: flex;
-  justify-content: flex-start;
+  /* justify-content: flex-start; */
 }
 /* ==============LOGO=================== */
 .logo-page {
@@ -64,7 +81,7 @@
   color: var(--brand-color);
   display: block;
   margin-right: 76px;
-  width: 115px;
+  /* width: 115px; */
 }
 .logo-page-studio {
   color: var(--brand-lite-color);
@@ -93,6 +110,8 @@
 /* =====================ADDRES============================= */
 .contacts {
   font-style: normal;
+
+  margin-left: auto;
 }
 
 .contact-link {
@@ -106,8 +125,8 @@
   margin: 0;
   padding: 0;
   display: flex;
-  align-items: flex-end;
-  margin-left: auto;
+  /* align-items: flex-end;
+  margin-left: auto; */
 }
 
 .contact-link:hover,
@@ -121,25 +140,32 @@
   margin-right: 0;
 }
 
-.mail {
+/* .mail {
   width: 153px;
 }
 .phone {
   width: 151px;
-}
+} */
 /* ======================HERO========================== */
 .hero {
-  text-align: center;
+  /* padding-top: 188px; */
+  /* padding-top: 72px; */
+}
+.hero-content {
+  /* padding-top: 72px; */
 }
 .hero-title {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
   color: var(--hero-color);
 
   margin-top: 0;
-  margin-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-bottom: 48px; */
 }
 .hero-btn {
   font-family: "Roboto", sans-serif;
@@ -155,8 +181,9 @@
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 32px;
-  display: inline-block;
+  display: block;
   border: none;
+  margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -167,20 +194,25 @@
   background: var(--brand-lite-color);
   padding-top: 188px;
   padding-bottom: 188px;
-  margin-bottom: 120px;
+  /* margin-bottom: 120px; */
+  text-align: center;
 }
 
 /* ==================ADVANTAGES================ */
 
 .advantages {
-  /* outline: 2px solid tomato; */
-  width: 1158px;
+  outline: 2px solid tomato;
+  /* width: 1158px; */
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: auto;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  /* margin-left: auto;
   margin-right: auto;
   margin-bottom: 120px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+}
+.advantages-content {
 }
 
 .page-title {
@@ -199,9 +231,9 @@
   color: var(--body-color);
   margin: 0;
 }
-/* .advantages-items {
+.advantages-items {
   background-color: tomato;
-} */
+}
 .list-page .advantages-items + .advantages-items {
   margin-left: 24px;
 }
@@ -220,35 +252,42 @@
   margin-top: 0;
   margin-bottom: 72px;
 }
-
+.work-example {
+  padding-bottom: 120px;
+}
 /* ============================OUR TEAM========================= */
 .chous {
   margin-right: 24px;
   width: 264px;
   background-color: var(--card-color);
   text-align: center;
+  background-color: tomato;
 }
 .chous:nth-child(4n) {
   margin-right: 0;
 }
 .work-items-sections {
   /* outline: 2px solid tomato; */
-  width: 1158px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 120px;
-  padding-top: 120px;
-  flex-wrap: wrap;
+  /* width: 1158px; */
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* padding-bottom: 120px;
+  padding-top: 120px; */
+  /* flex-wrap: wrap; */
 }
 .work-items-bc {
   background: var(--logo-footer-color);
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
-.team {
+/* .team {
   margin-bottom: 32px;
 }
 .card-work {
   margin-bottom: 32px;
+} */
+.card-descriotion {
 }
 /* ======================PAGE PORTFOLIO=========================== */
 .page-two {
@@ -337,13 +376,14 @@
 }
 .footer {
   background: var(--brand-lite-color);
-  padding: 100px;
+  /* padding: 100px; */
   margin: 0;
 }
-.logo-page {
+/* .logo-page {
   margin-bottom: 16px;
-}
+} */
 
 .last {
   color: var(--last-color);
+  width: 264px;
 }
