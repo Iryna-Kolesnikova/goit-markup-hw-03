@@ -217,7 +217,6 @@ ul {
 /* ============================OUR TEAM========================= */
 .chous {
   margin-right: 24px;
-  width: 264px;
   background-color: var(--card-color);
   text-align: center;
 }
@@ -232,19 +231,20 @@ ul {
 }
 
 .card-descriotion {
-  margin: 32px 16px;
+  padding: 32px 0;
 }
 /* ======================PAGE PORTFOLIO=========================== */
+.btn-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
 .page-two {
   margin-bottom: 96px;
 }
 .btn-list {
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
   justify-content: center;
-  padding-bottom: 72px;
-  padding-top: 96px;
+  margin-bottom: 120px;
 }
 .btn-all-item {
   color: var(--hero-color);
@@ -277,8 +277,10 @@ ul {
 
 .list-page {
   display: flex;
-  flex-wrap: wrap;
   padding-left: 0;
+}
+.list-page-portfolio {
+  flex-wrap: wrap;
 }
 .list-positiv {
   width: 264px;
@@ -292,7 +294,7 @@ ul {
 .card-text {
   border: 1px solid var(--last-color);
   border-width: 0px 1px 1px 1px;
-  padding: 32px;
+  padding: 32px 16px;
 }
 .examples-list {
   margin-bottom: 120px;
@@ -311,11 +313,11 @@ ul {
 .footer-style {
   background: var(--brand-lite-color);
   width: 264px;
-  padding: 100px 1020px 100px 0px;
 }
 .footer {
   background: var(--brand-lite-color);
-  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-footer {
   margin-bottom: 16px;
