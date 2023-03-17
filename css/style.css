@@ -174,8 +174,6 @@ ul {
 /* ==================ADVANTAGES================ */
 
 .advantages {
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -244,7 +242,7 @@ ul {
 .btn-list {
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 72px;
 }
 .btn-all-item {
   color: var(--hero-color);
